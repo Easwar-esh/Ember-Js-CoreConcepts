@@ -1,16 +1,17 @@
 <Message::Avatar
   @title="{{@username}}'s avatar"
-  {{!-- @title={{@avatarTitle}} --}}
+  @title={{@avatarTitle}}
   {{!-- @initial={{@avatarInitial}} --}}
   @initial={{substring @username 0 1 }}
   @isActive={{@userIsActive}}
   class="{{if @isCurrentUser "current-user"}}"
-/>
+></Message::Avatar>
 <section>
   <Message::Username
     @name={{@username}}
     @localTime={{@userLocalTime}}
   />
-
+  {{log this.substring @username 0 1}}
   {{yield}}
 </section>
+

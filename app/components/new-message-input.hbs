@@ -1,0 +1,7 @@
+<label for="message">Message</label>
+    <form {{on "submit" (fn this.createMessage @index)}}>
+        <Input @value={{this.message}}/>
+        <button type="submit">
+        Send by {{@index}}
+        </button>
+</form>

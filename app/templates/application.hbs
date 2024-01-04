@@ -1,7 +1,21 @@
-{{page-title "CoreConcepts1"}}
+{{!-- {{page-title "CoreConcepts1"}} --}}
 
 {{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
+{{!-- <WelcomePage /> --}}
 {{!-- Feel free to remove this! --}}
 
-{{outlet}}
+{{!-- {{outlet}} --}}
+
+
+<div class="messages">
+    <ReceivedMessage/>
+    <SentMessage />
+    <label for="message">Message</label>
+    <form>
+        
+        <input id="message" />
+        <button type="submit">
+        Send
+        </button>
+  </form>
+</div>

@@ -1,3 +1,4 @@
 <aside ...attributes>
-    <div class="avatar is-active" title={{@title}}>{{@initial}}</div>
+    {{!-- Inline if Condition --}}
+    <div class="avatar {{if @isActive "is-active"}}" title={{@title}}>{{@initial}}</div>
 </aside>

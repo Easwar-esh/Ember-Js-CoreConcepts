@@ -1,0 +1,14 @@
+{{!-- <p>0</p>
+<p>{{this.count}}</p>
+<button type="button">+1</button>
+<button type="button">-1</button> --}}
+
+<p>+ {{this.count}}</p>
+<p>x {{@multiple}}</p>
+{{log @multiple}}
+{{!-- <button type="button">+1</button> --}}
+<button type="button" {{on "click" (fn this.change 1)}}>+1</button>
+{{!-- <button type="button">-1</button> --}}
+<button type="button" {{on "click" this.decrement}}>-1</button>
+{{!-- Which class belong that hbs file wanth to there --}}
+{{!-- <button type="button" {{on "click" this.double}}>double</button> --}}
